@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="Assets/stylesheets/styles.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+    <title>Bishal Biswas | Portfolio</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar closed">
+            <ul>
+                <li><a href="/site"><i class='fas fa-home'></i>Home</a></li>
+                <li><a href="Skills.html"><i class='fas fa-clipboard'></i>Education and Skills</a></li>
+                <li><a href="Services.html"><i class='fas fa-briefcase'></i>Services</a></li>
+                <li><a href="Portfolio.html"><i class='fas fa-scroll'></i>My Work</a></li>
+                <li><a href="Testimonials.html"><i class='fas fa-person-booth'></i>Testimonials</a></li>
+                <li><a href="Contact.html"><i class='fas fa-mobile'></i>Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="topBar">
+                <a href="/site">
+                    <img src="Assets/images/Bishal Biswas.png" alt="Bishal Biswas">
+                </a>
+                <a class="hamburgerHold">
+                    <span class="hamburger"></span>
+                </a>
+            </div>
+            <div class="main">
+                <div class="portfolio" id='main'>
+                    <h1>Read my blog</h1>
+                    <div class="othersWorks">
+                        <a target="_blank" href="https://itsme-bishal.blogspot.com/" class="blogLink">
+                            <img src="Assets/images/folioImgs/Blog1.jpg" alt="">
+                            itsme-Bishal
+                        </a>
+                        <a target="_blank" href="https://storentrep.blogspot.com/" class="blogLink">
+                            <img src="Assets/images/folioImgs/Blog2.png" alt="">
+                            StorEntrep
+                        </a>
+                    </div>
+
+                    <h1>My Recent Works</h1>
+                    <div class="workTypes">
+                        <span data-filter=".all" class="types active">All Works</span>
+                        <span data-filter=".WebDes" class="types">Web Designs</span>
+                        <span data-filter=".Proj" class="types">Full Projects</span>
+                        <span data-filter=".JSMiniPrj" class="types">Small Projects</span>
+                        <span data-filter=".EmalDes" class="types">Email Designs</span>
+                        <span data-filter=".GrapDes" class="types">Graphic Designs</span>
+                        <span data-filter=".OnBusCards" class="types">Business Card Designs</span>
+                    </div>
+
+                    <div class="workHolder">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomBar">
+        <div class="tools">
+            <span class="Dark"><i class="fas fa-adjust"></i> </span>
+            <span class="bottomHamburger"><i class="fas fa-th-large"> </i></span>
+        </div>
+        <ul>
+            <li><a href="/site"><i class='fas fa-home'></i>Home</a></li>
+            <li><a href="Skills.html"><i class='fas fa-clipboard'></i>Education and Skills</a></li>
+            <li><a href="Services.html"><i class='fas fa-briefcase'></i>Services</a></li>
+            <li><a href="Portfolio.html"><i class='fas fa-scroll'></i>My Work</a></li>
+            <li><a href="Testimonials.html"><i class='fas fa-person-booth'></i>Testimonials</a></li>
+            <li><a href="Contact.html"><i class='fas fa-mobile'></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="workDetailsHolder">
+        <div class="workHeadHolder">
+            <span class="workCounter">
+                <p></p>
+            </span>
+            <span class="clsBtn"></span>
+        </div>
+        <div class="workDetails">
+            <div class="mainThumb">
+                <div class="main-thumb"></div>
+                <h2>Project Title</h2>
+            </div>
+
+            <div class="projectDetails"></div>
+        </div>
+    </div>
+    <span class="WorkDetailbottomNav" style="display: none;">
+        <div class="WorkNav">
+            <a>
+                <p>Previous</p>
+                <img src="" >
+                <span>Previous Project Title</span>
+            </a>
+
+            <a>
+                <p>Next</p>
+                <img src="" >
+                <span>Next Project Title</span>
+            </a>
+        </div>
+    </span>
+    <a href="#main" id='BackToTop'><i class="fas fa-chevron-up"></i></a>
+
+
+    <script src="Assets/scritps/jquery.min.js"></script>
+    <script src="Assets/scritps/script.js"></script>
+
+    <script>
+        /*-------------Work Type Filter Buttons--------------*/
+        let workType = document.querySelectorAll('.portfolio .workTypes .types');
+        var FiltVal = '.all';
+        var FiltValText = 'All Works';
+        workType.forEach(ele => ele.addEventListener('click', function () {
+
+            $('.wrapper .container .main').animate({
+                scrollTop : $('.workHolder').offset().top
+            }, 500);
+
+            workType.forEach(e => {
+                e.classList.remove('active');
+            });
+            ele.classList.add('active');
+
+            FiltVal = ele.getAttribute('data-filter');
+            FiltValText = ele.textContent;
+            if (FiltVal == '.all') {
+                $('.portfolio .workHolder .work').show('1000');
+            }
+            else {
+                $('.portfolio .workHolder .work').not(FiltVal).hide('1500');
+                $('.portfolio .workHolder .work').filter(FiltVal).show('2000');
+            }
+        }));
+
+        /*-------------Work Details show--------------*/
+        let child, SelectedWorkIndex, filteredWorks, filteredWorksTitle , clickedWork;
+        let tempNavBttns ,NavBttns;
+        let allWorks = document.querySelectorAll('.workHolder .work');
+        
+        allWorks.forEach(clickedWork => clickedWork.addEventListener('click', function () {
+
+            filteredWorks = document.querySelectorAll('.workHolder .work' + FiltVal);
+            SelectedWorkIndex = Array.from(filteredWorks).indexOf(clickedWork);
+            
+            filteredWorksTitle = clickedWork.children[0].lastElementChild.textContent;
+            
+            showWorkDetails(SelectedWorkIndex, filteredWorks , filteredWorksTitle); 
+            /*-------------Show Work using Nav Button--------------*/
+            NavBttns =  document.querySelectorAll('.workDetailsHolder .workDetails .projectDetails .WorkNav a');
+            
+            NavBttns.forEach(btns => btns.addEventListener('click' , function(){
+                showWorkDetails(Number(btns.getAttribute('index')) , filteredWorks , btns.children[2].textContent );
+            }));   
+        }));
+        
+        
+
+        function showWorkDetails(index, filterWork ,workTitle) {
+            /*4 Work Details*/document.querySelector('.workDetailsHolder .workDetails').scrollTop = 0;
+            /*1 Counter*/document.querySelector('.workDetailsHolder .workHeadHolder .workCounter p').textContent = (index+1) + ' of ' + filterWork.length + ' ('+FiltValText+')';
+            /*2 Work Title*/document.querySelector('.workDetailsHolder .workDetails .mainThumb h2').textContent = workTitle;
+            /*3 Main Thumbnail*/document.querySelector('.workDetailsHolder .workDetails .mainThumb .main-thumb').innerHTML = filterWork[index].children[1].children[0].innerHTML;
+            /*4 Work Details*/document.querySelector('.workDetailsHolder .workDetails .projectDetails').innerHTML = filterWork[index].children[1].children[1].innerHTML;
+            
+            let previousWorkBtn =  document.querySelector('.WorkDetailbottomNav .WorkNav a:nth-child(1)');
+            let nextWorkBtn =  document.querySelector('.WorkDetailbottomNav .WorkNav a:nth-child(2)');
+            
+            /*Work Nav Button*/
+            if((index+1) != filterWork.length){
+                nextWorkBtn.children[1].setAttribute('src' , filterWork[index + 1].children[0].children[0].getAttribute('src'));
+                nextWorkBtn.children[2].innerHTML = filterWork[index + 1].children[0].children[1].innerHTML;
+                nextWorkBtn.setAttribute('index' , (index+1));
+                nextWorkBtn.style.display = 'flex';
+            }
+            else
+                nextWorkBtn.style.display = 'none';
+
+            if(index != 0){
+                previousWorkBtn.children[1].setAttribute('src' , filterWork[index-1].children[0].children[0].getAttribute('src'));
+                previousWorkBtn.children[2].innerHTML = filterWork[index-1].children[0].children[1].innerHTML;
+                previousWorkBtn.setAttribute('index' , (index-1));
+                previousWorkBtn.style.display = 'flex';
+            }
+            else
+                previousWorkBtn.style.display = 'none';
+            
+            /*Adding Nav Button*/
+            document.querySelector('.workDetailsHolder .workDetails .projectDetails').innerHTML += document.querySelector('.WorkDetailbottomNav').innerHTML;
+            
+            NavBttns =  document.querySelectorAll('.workDetailsHolder .workDetails .projectDetails .WorkNav a');
+            NavBttns.forEach(btns => btns.addEventListener('click' , function(){
+                document.querySelector('.workDetailsHolder .workDetails .projectDetails').innerHTML="";
+                showWorkDetails(Number(btns.getAttribute('index')) , filteredWorks , btns.children[2].textContent );
+            }));   
+            
+            $('.workDetailsHolder').fadeIn(1500);
+            document.querySelector('.workDetailsHolder').style.display = 'flex';
+        }
+
+        /*-------------Work Details Close Button--------------*/
+        let WorkDetailsClsBtn = document.querySelector('.workDetailsHolder .workHeadHolder .clsBtn');
+        let workDetailsHolder = document.querySelector('.workDetailsHolder');
+        WorkDetailsClsBtn.addEventListener('click', function () {
+            $('.workDetailsHolder').fadeOut(500);
+        });
+    </script>
+</body>
+
+</html>

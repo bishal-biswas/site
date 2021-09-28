@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:url" content="https://bishal-biswas.github.io/site" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Bishal Biswas, A Self learner, Blogger, Freelancer and a Web Developer enthusiast. This is a portfolio site displaying all my Skills, work and projects."/>
+    <meta name="keywords" content="Bishal Biswas , Bishal Biswas Portfolio, Blogger, Freelancer, Web Developer, Web Designer, Blogger Bishal Biswas, Programmer Bishal Biswas, itsme-bishal"/>
+    <meta property="og:image" content="https://bishal-biswas.github.io/site/Assets/images/Photo.jpg" />
+    <meta property="og:title"content="Bishal Biswas Developer and a Blogger" />
+    
+    <link rel="stylesheet" href="Assets/stylesheets/styles.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+    <title>Bishal Biswas Developer | Home</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar closed">
+            <ul>
+                <li><a href="/site"><i class='fas fa-home'></i>Home</a></li>
+                <li><a href="Skills.html"><i class='fas fa-clipboard'></i>Education and Skills</a></li>
+                <li><a href="Services.html"><i class='fas fa-briefcase'></i>Services</a></li>
+                <li><a href="Portfolio.html"><i class='fas fa-scroll'></i>My Work</a></li>
+                <li><a href="Testimonials.html"><i class='fas fa-person-booth'></i>Testimonials</a></li>
+                <li><a href="Contact.html"><i class='fas fa-mobile'></i>Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="topBar">
+                <a href="/site">
+                    <img src="Assets/images/Bishal Biswas.png" alt="Bishal Biswas">
+                </a>
+                <a class="hamburgerHold">
+                    <span class="hamburger"></span>
+                </a>
+            </div>
+            <div class="main">
+                <div class="index" id='main'>
+                    <div class="darkBack">
+                        <div class="content">
+                            <img src="Assets/images/ProPic.jpg" alt="">
+                            <p>Hello, I am</p>
+                            <h1>Bishal Biswas</h1>
+                            <p id="typeWritter"><span>Web Developer</span></p>
+                        </div>
+                    </div>
+                    <div id="scrollP" class="demo"><a href="#aboutMe"><span></span>Scroll</a></div>
+                </div>
+    
+                <div class="aboutMe" id="aboutMe">
+                    <h1>About Me</h1>
+                    <div class="content">
+                        <div class="data">
+                            <p>Hello, My name is Bishal Biswas based in Kolkata, India. 
+                                I consider myself a newbie in computers and blogging field. 
+                                I am currently focusing on blogging, trying my fortune in freelancing, designing web pages and websites 
+                                for my own enjoyment and practice. I'm trying to gain the required skills necessary to be a 
+                                professional full stack Web developer.</p>
+                            <div class="Bio">
+                                <ul>
+                                    <li><b>Name: </b> Bishal Biswas</li>
+                                    <li><b>Age: </b>25</li>
+                                    <li><b>Address: </b>Kolkata, India</li>
+                                    <li><b>Qualification: </b>MCA</li>
+                                </ul>
+                                <ul style="display: none;">
+                                    <li><b>Name: </b> Bishal Biswas</li>
+                                    <li><b>Age: </b>25</li>
+                                    <li><b>Address: </b>Kolkata, India</li>
+                                    <li><b>Qualification: </b>MCA</li>
+                                </ul>
+                            </div>
+                            <div class="btnLinks">
+                                <a href="AboutMe.html" class="btns">Know More</a>
+                                <a href="" class="btns">View CV</a>
+                            </div>
+                        </div>
+                        <div class="photoHold"><img src="Assets/images/photo2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomBar">
+        <div class="tools">
+            <span class="Dark"><i class="fas fa-adjust"></i>  </span>
+            <span class="bottomHamburger"><i class="fas fa-th-large"> </i></span>
+        </div>
+        <ul>
+            <li><a href="/site"><i class='fas fa-home'></i>Home</a></li>
+            <li><a href="Skills.html"><i class='fas fa-clipboard'></i>Education and Skills</a></li>
+            <li><a href="Services.html"><i class='fas fa-briefcase'></i>Services</a></li>
+            <li><a href="Portfolio.html"><i class='fas fa-scroll'></i>My Work</a></li>
+            <li><a href="Testimonials.html"><i class='fas fa-person-booth'></i>Testimonials</a></li>
+            <li><a href="Contact.html"><i class='fas fa-mobile'></i>Contact</a></li>
+        </ul>
+    </div>
+    <a href="#main" id='BackToTop'><i class="fas fa-chevron-up"></i></a>
+    <script src="Assets/scritps/jquery.min.js"></script>
+    <script src="Assets/scritps/jquery.ripples.js"></script>
+        
+    <script src="Assets/scritps/script.js"></script>
+    <script>
+        $(function () {
+            "use strict";
+            $(".content p span").typed({
+                strings: ["Web Designer", "Web Developer", "Freelancer", "Blogger"], //Headlines(Change It)
+                loop: true,
+                startDelay: 1e3, 
+                backDelay: 2e3
+            });
+        });
+    </script> 
+</body>
+
+</html>
