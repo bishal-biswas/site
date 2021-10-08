@@ -1145,7 +1145,7 @@
     }
     /*.aboutMe .content img{right: 15px;width: 395px;}*/
     .aboutMe .content .data{margin-bottom: 10vh;}
-    .aboutMe .content .photoHold{margin-bottom: 5vh;width:90%;}
+    .aboutMe .content .photoHold{margin-bottom: 5vh;width:100%;min-width:auto;}
     .skills .section1 .skill .content .activity{padding-left: 25px;}
     .portfolio .othersWorks{margin-bottom: 10vh;}
     .skills .section1 .skill {width:90%;}
