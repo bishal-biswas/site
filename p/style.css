@@ -125,6 +125,7 @@ body{
 
 .container .wrapper .lower .sect .details .text.skills li b{
     width: 40%;
+    text-align: initial;
 }
 .container .wrapper .lower .sect .details .text.skills li .skill{
     display: block;
@@ -217,11 +218,23 @@ body{
 /*------------------------------------------*/
 
 @media (max-width: 560px){
+    body h3{
+        font-size: 10px;
+    }
+    body h1{
+        font-size: x-large;
+    }
     .container{
         padding: 10px;
     }
 
     .container .wrapper{
         width: 100%;
+    }
+    .container .wrapper .lower .right .details.Languages li{
+        padding: 0 15px;
+    }
+    .container .wrapper .lower .sect{
+        font-size: 0.75em;
     }
 }
