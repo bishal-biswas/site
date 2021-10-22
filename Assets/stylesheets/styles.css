@@ -723,12 +723,13 @@
 .portfolio .workHolder .work{
     margin: 20px;
 }
+/*
 .portfolio .workHolder .work.Show{
     
 }
 .portfolio .workHolder .work .thumb{
     
-}
+}*/
 .workDetailsHolder{
     height: 95vh;
     width: 95vw;
@@ -1144,7 +1145,7 @@
         align-items: center;
     }
     /*.aboutMe .content img{right: 15px;width: 395px;}*/
-    .aboutMe .content .data{margin-bottom: 10vh;}
+    .aboutMe .content .data{margin-bottom: 15vh;}
     .aboutMe .content .photoHold{margin-bottom: 5vh;width:100%;min-width:auto;}
     .skills .section1 .skill .content .activity{padding-left: 25px;}
     .portfolio .othersWorks{margin-bottom: 10vh;}
@@ -1171,3 +1172,5 @@
         width: 100%;
     }
 }
+
+/*transition: all .5s ease-in-out;*/
