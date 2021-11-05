@@ -840,7 +840,7 @@
 }
 
 .workDetailsHolder .workDetails .projectDetails .tech img{
-    margin: 0 5px;
+    margin: 5px;
     height: 60px;
     width: 60px;object-fit: cover;
     cursor: pointer;
@@ -882,11 +882,13 @@
     text-decoration: none;
     color:#fd5c55;
     display: flex;
+    flex:1;
     flex-direction: column;
 }
 
 .workDetailsHolder .workDetails .projectDetails .WorkNav a *{
     cursor:pointer;
+    width:60%
 }
 
 .workDetailsHolder .workDetails .projectDetails .WorkNav a:nth-child(1){
@@ -894,13 +896,13 @@
 }
 .workDetailsHolder .workDetails .projectDetails .WorkNav a:nth-child(2){
     align-items: end;
-    flex: 1;
+    text-align:right;
 }
 
 .workDetailsHolder .workDetails .projectDetails .WorkNav a img{
     width: 120px;
     height: 70px;
-    margin: 10px 0;
+    margin: 10px 0;border: 3px solid;
 }
 
 .portfolio .workHolder .work .thumb img{
@@ -1179,6 +1181,14 @@
     .aboutMe .content .photoHold{margin-bottom: 5vh;width:100%;min-width:auto;}
     .skills .section1 .skill .content .activity{padding-left: 25px;}
     .portfolio .othersWorks{margin-bottom: 10vh;}
+    .portfolio .workHolder .work .thumb img{
+        width: 100%;
+        height: fit-content;
+    }
+    .workDetailsHolder .workDetails .mainThumb .main-thumb{
+        width: 100%;
+        height: fit-content;
+    }
     .skills .section1 .skill {width:90%;}
     .services .serviceHolder .service{
         width: 40%;
