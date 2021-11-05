@@ -801,7 +801,11 @@
     align-items: center;
 }
 
-.workDetailsHolder .workDetails h2{color: #fff;}
+.workDetailsHolder .workDetails {color: #fff;}
+
+.workDetailsHolder .workDetails h2{padding: 10px 0;}
+.workDetailsHolder .workDetails h3{padding: 10px 0;}
+.workDetailsHolder .workDetails p{padding: 10px 0;}
 
 .workDetailsHolder .workDetails .mainThumb .main-thumb{
     height: 200px;
@@ -821,8 +825,25 @@
 }
 
 .workDetailsHolder .workDetails .projectDetails .description{
-    padding: 10px 0;
+    padding: 25px 0;
     line-height: 20px;
+}
+
+.workDetailsHolder .workDetails .projectDetails .description a{
+    color:#fd5c55;
+    text-decoration: none;
+}
+
+.workDetailsHolder .workDetails .projectDetails .tech{
+    display: flex;
+    overflow: auto;margin: 10px 0;
+}
+
+.workDetailsHolder .workDetails .projectDetails .tech img{
+    margin: 0 5px;
+    height: 60px;
+    width: 60px;object-fit: cover;
+    cursor: pointer;
 }
 
 .workDetailsHolder .workDetails .projectDetails ul li{
@@ -839,7 +860,8 @@
 .workDetailsHolder .workDetails .projectDetails .screenShots{
     width: 100%;
     border-radius: 10px;
-    height: 180px;
+    height: 200px;
+    padding: 10px 0;
     display: flex;
     overflow-x: scroll;
 }
@@ -847,7 +869,8 @@
 .workDetailsHolder .workDetails .projectDetails .screenShots img{
     height: 100%;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 15px;border: 1px solid #fff;
+    margin: 0 10px;
 }
 
 .workDetailsHolder .workDetails .projectDetails .WorkNav{
@@ -884,7 +907,13 @@
     height: 170px;
     width: 345px;
     cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #fd5c55;transition: 0.5s all ease-in-out;
 }
+.portfolio .workHolder .work .thumb img:hover{
+    box-shadow: 0 0 4px 2px #fff;
+}
+
 .portfolio .workHolder .work .thumb p{cursor: pointer;width: max-content;}
 .portfolio .workHolder .work .WorkDetails{
     display:none;
