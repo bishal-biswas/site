@@ -107,6 +107,11 @@ body{
     font-size: 0.8em;
 }
 
+.container .wrapper .lower .sect .details .text a{
+    color: red;
+    text-decoration: none;
+}
+
 .container .wrapper .lower .sect .details .text.contact span{
     display: flex;
     padding: 5px 0;
