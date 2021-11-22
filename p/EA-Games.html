@@ -52,129 +52,7 @@
             color: #fff;
         }
 
-        .ProPic {
-            height: 125px;
-            width: 125px;
-            border-radius: 50%;
-            border: 4px solid #f45a5a;
-            box-shadow: 0 0 12px 1px #f85b5b;
-            ;
-            position: relative;
-            top: 60px;
-        }
-
-        .fa-check {
-            background-color: #2f82ff;
-            padding: 3px;
-            color: #fff;
-            border-radius: 50%;
-            margin: 0 5px;
-        }
-
-        .socials {
-            margin: 10px 0
-        }
-
-        .socials ul {
-            display: flex;
-            list-style: none;
-        }
-
-        .socials ul li {
-            background-color: #fff;
-            border-radius: 50%;
-            margin: 0 5px;
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 12px -1px #000;
-        }
-
-        .main-links,
-        .links {
-            margin: 35px 0 0 0;
-            width: 60%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .links{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .links a {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            width: 70%;
-            display: flex;
-            background-color: #fff;
-            text-align: center;
-            border-radius: 50px;
-            margin: 9px;
-            height: 50px;
-            box-shadow: 0px 0px 9px 1px black;
-        }
-        .links a img{
-            height: 90%;
-            border-radius: 50%;
-            border: 1px solid;    margin: 0 5px;
-        }
-        .btnsLinks {
-            padding: 20px;
-            display: flex;
-        }
-
-        .btnsLinks a {
-            background-image: linear-gradient(45deg, #6485ff, #3a3cff);
-            color: #fff;
-            border-radius: 20px;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 10px;
-            min-width: 110px;
-            display: block;
-            box-shadow: 0 0 5px 2px #3a3cff;
-        }
-
-        .main-links a {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;text-decoration: none;
-            color: #fff;
-        }
-
-        .main-links a img {
-            width: 50%;
-            border-radius: 7px;
-            transition: 0.5s all ease-in-out;
-            box-shadow: 0 0 12px -1px #000;
-        }
-
-        .main-links a:hover img{
-            box-shadow: 0 0 12px 3px #000;
-        }
-
-        .rec-Artcl {
-            height: 220px;
-            width: 60%;
-            padding: 15px 0;
-        }
-
-        b {
-            padding: 10px;
-            display: block;
-            color: #fff;
-            width:100%
-        }
-
+        
         .credits {
             color: #fff;
             padding: 20px 0;
@@ -183,29 +61,11 @@
 
         /*Media Queries for responsive*/
         @media (max-width: 840px) {
-            .container {
-                width: 90%;
-            }
-
-            .links a {
-                width: 90%;
-            }
-
-            .main-links, .rec-Artcl {
-                width: 90%;
-            }
+            
         }
 
         @media (max-width: 640px) {
-            .container {
-                width: 90%;
-                padding-top: 15%;
-            }
-
-            .main-links, .links,
-            .rec-Artcl {
-                width: 90%;
-            }
+            
         }
 
         /*----------------------------------------------------------------------*/
@@ -248,88 +108,8 @@
 
 <body>
     <div class="wrapper">
-        <img src="H:\Bishal BISWAS\Spare Parts\IMG_20160915_141036_processed.jpg" alt="ProfilePicMain" class='ProPic'>
-        <div class="container">
-            <b>Bishal Biswas<i class="fa fa-check" aria-hidden="true"></i></b>
-            <p>Blogger | Web Developer Enthusiast</p>
-            <p>Hi , I am Bishal, a Masters student with a dream of becoming a professional web developer. I like to explorer and write content/articles on computer/tech related stuffs on my blog.</p>
-            <p><i class="fas fa-map-marker-alt fa-lg"></i> Kolkata, India</p>
-            <div class="socials">
-                <ul>
-                    <li><a href=""><i style="color: #6060ce;" class="fab fa-facebook  fa-2x"></i></a></li>
-                    <li><a href=""><i style="color: #40b2df;" class="fab fa-twitter  fa-2x"></i></a></li>
-                    <li><a href=""><i style="color: #4747c7;" class="fab fa-linkedin  fa-2x"></i></a></li>
-                    <li><a href=""><i style="color: #ce0909;" class="fab fa-quora  fa-2x"></i></a></li>
-                    <li><a href=""><i style="color: black;" class="fab fa-github  fa-2x"></i></a></li>
-                </ul>
-            </div>
-            <div class="btnsLinks">
-                <a href="">Played Games</a>
-                <a href="">My Favourite Songs</a>
-                <a href="">Movies Watched</a>
-            </div>
-        </div>
-
-        <div class="main-links">
-            <a href="https://itsme-bishal.blogspot.com" title="Coding Bishal Blog">
-                <img src="../Assets/images/folioImgs/Blog1.jpg" alt="Coding Bishal Blog Logo">
-                Coding Bishal
-            </a>
-            <a href="https://bishal-biswas.github.io/site/" title="My Portfolio">
-                <img src="../Assets/images/folioImgs/portfolio.jpg" alt="Bishal Biswas Portfolio">
-                Portfolio
-            </a>
-            <a href="https://storentrep.blogspot.com/" title="StorEntrep">
-                <img src="../Assets/images/folioImgs/Blog2.png" alt="StorEntrep Logo">
-                StorEntrep
-            </a>
-        </div>
-
-        <div class="rec-Artcl">
-            <b>Recent Article Published</b>
-            <div class="swiper-container mySwiper">
-                <div class="swiper-wrapper">
-                    <a href="" class="swiper-slide"><img src="../Work/W1/W1Thumb.jpg"></a>
-                    <a href="" class="swiper-slide"><img src="../Work/W1/W1Thumb.jpg"></a>
-                    <a href="" class="swiper-slide"><img src="../Work/W1/W1Thumb.jpg"></a>
-                    <a href="" class="swiper-slide"><img src="../Work/W1/W1Thumb.jpg"></a>
-                    <a href="" class="swiper-slide"><img src="../Work/W1/W1Thumb.jpg"></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="links">
-            <b>Check out these links</b>
-            <a href="" title="StorEntrep">
-                <img src="../Assets/images/folioImgs/Blog2.png" alt=""> Show your talent on StorEntrep
-            </a>
-            <a href="" title="Purchase Now">
-                <i class="fa fa-cart"></i> Buy from my Affiliate
-            </a>
-        </div>
-
-        <div class="credits">
-            <p>Made by Bishal Biswas <br> on Github.</p>
-        </div>
+        <div class="container"></div>
     </div>
-
-    <script src="../../../Web Designing Practice/Small Projects/Portfolio Designs/swiper-bundle.min.js"></script>
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js"></script> -->
-    <script>
-        var width = window.innerWidth;
-        var Slide = 2.5;
-        if (width < 540)
-            Slide = 1.2;
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: Slide,
-            spaceBetween: 30,
-            freeMode: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-        });
-    </script>
 </body>
 
 </html>
