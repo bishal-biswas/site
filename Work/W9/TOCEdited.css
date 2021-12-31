@@ -11,9 +11,9 @@
             border: 1px solid #fd5c55;
             box-shadow: 0 0 6px 3px #fd5c55;
             background-color: #2e2e2e;
-            color: #fff;padding: 0;min-width: 250px
+            color: #fff;padding: 0;max-width: 330px
         }
-        .Modern .TOCheader{padding: 10px;}
+        .Modern .TOCheader{padding: 25px 10px;}
         .Modern .TOCheader h3{margin:0}
         .Modern #TOCToggle{padding-right:10px;color: #fff;}
         .Modern #TOCToggle.rot180{transform: rotateZ(180deg);}

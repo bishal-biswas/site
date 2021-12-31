@@ -170,7 +170,7 @@ function TOCDesModern(contentHoldr, tocContainer, status) {
     TOCDesList.classList.add('TOCLinks');
     TOCDesList.classList.add('show');
     if (status == 'Show')
-        TOCDesHeader.innerHTML += "<p><b>Table of Contents</b></p><a href='javascript:void(0)' id='TOCToggle'><i class='fa fa-chevron-up'></i></a>";
+        TOCDesHeader.innerHTML += "<h3>Table of Contents</h3><a href='javascript:void(0)' id='TOCToggle'><i class='fa fa-chevron-up'></i></a>";
     else {
         TOCDesHeader.innerHTML += "<h3>Table of Contents</h3><a href='javascript:void(0)' class='rot180' id='TOCToggle'><i class='fa fa-chevron-up'></i></a>";
         TOCDesList.classList.remove("show");
