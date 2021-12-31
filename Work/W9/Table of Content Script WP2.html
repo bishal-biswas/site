@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Table of Content Generator Script</title>
+    <link rel="stylesheet" href="TOCStyle.css">
+</head>
+<body>
+    <article>
+        <h1>This is the Title of the Article</h1>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Tempora tempore inventore ipsam accusamus maiores reiciendis aut sed omnis molestiae, 
+            maxime similique sit. Sequi, nemo. Architecto sed eum inventore accusamus at perferendis 
+            fugit, neque temporibus quaerat fuga? Dignissimos praesentium tenetur modi facere. Voluptatem assumenda quae, 
+            reprehenderit dolores ut cum tenetur at.</p>
+
+        <div class="TOCContainer"></div>
+        
+        <h2>This is Heading 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fugiat?</p>
+        <h3>Heading 1 Sub-Heading 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio sint obcaecati dignissimos nihil numquam hic molestias quae autem deleniti. Perferendis, quis. Dignissimos dolorum laudantium tempore beatae eum cum laborum.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde facilis vel mollitia voluptates a eaque dignissimos corporis fugiat accusamus!</p>
+        <h3>Heading 1 Sub-Heading 2</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde facilis vel mollitia voluptates a eaque dignissimos corporis fugiat accusamus!</p>
+        <blockquote>This is some text in Blockquote.</blockquote>
+
+        <h2>This is the heading 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur magnam saepe harum in velit animi itaque atque dolore quod, dolorem maiores, commodi incidunt repellendus distinctio libero.</p>
+        <h3>Heading 2 Sub-Heading 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio sint obcaecati dignissimos nihil numquam hic molestias quae autem deleniti. Perferendis, quis. Dignissimos dolorum laudantium tempore beatae eum cum laborum.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde facilis vel mollitia voluptates a eaque dignissimos corporis fugiat accusamus!</p>
+        <h3>Heading 2 Sub-Heading 2</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde facilis vel mollitia voluptates a eaque dignissimos corporis fugiat accusamus!</p>
+        <h3>Heading 2 Sub-Heading 3</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde facilis vel mollitia voluptates a eaque dignissimos corporis fugiat accusamus!</p>
+
+        <h2>Conclusion</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur magnam saepe harum in velit animi itaque atque dolore quod, dolorem maiores, commodi incidunt repellendus distinctio libero.</p>
+        
+    </article>
+    <script src="TOCGenerator.js"></script>
+    <script>
+        
+        TOCGenerator('article' ,'.TOCContainer', 'WP2', 'Show');/**/
+    </script>
+</body>
+</html>

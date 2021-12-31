@@ -45,7 +45,6 @@ bodyWrapper.addEventListener('click', function () {
     BotLinks2.forEach(el => {
         el.style.display = 'none';
     })
-    console.log('yes');
 });
 Bothamb.addEventListener('click', function () {
     BotLinks.classList.toggle('Show');
