@@ -35,25 +35,25 @@ hamb.addEventListener('click', function () {
 /* Sidebar Show and Hide Ends */
 
 /* Bottombar Show and Hide Starts */
-let Bothamb = document.querySelector('.bottomHamburger');
+let Bothamb = document.querySelector('.bottomBar .tools span.BotTogUp');
 let BotLinks = document.querySelector('.bottomBar ul');
-let BotLinks2 = document.querySelectorAll('.bottomBar ul li a');
+//let BotLinks2 = document.querySelectorAll('.bottomBar ul li a');
 
 let bodyWrapper = document.querySelector('.wrapper');
 bodyWrapper.addEventListener('click', function () {
     BotLinks.classList.remove('Show');
-    BotLinks2.forEach(el => {
+    /*BotLinks2.forEach(el => {
         el.style.display = 'none';
-    })
+    })*/
 });
 Bothamb.addEventListener('click', function () {
     BotLinks.classList.toggle('Show');
-    BotLinks2.forEach(el => {
+    /*BotLinks2.forEach(el => {
         if (el.style.display == 'flex')
             el.style.display = 'none';
         else
             el.style.display = 'flex';
-    })
+    })*/
 });
 /* Bottombar Show and Hide Ends */
 

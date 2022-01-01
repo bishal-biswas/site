@@ -50,10 +50,13 @@
     color: #fff;
     border: 1px solid #1d2032;
 }
-.wrapper .sidebar ul li:hover{
+.wrapper .sidebar ul li.active{
     background-color: #1d2032;
     border-top: 2px solid #fd5c55;
     border-bottom: 2px solid #fd5c55;
+}
+.wrapper .sidebar ul li:hover{
+    background-color: #1d2032;
 }
 .wrapper .sidebar ul li a{
     color: #fff;
@@ -184,42 +187,63 @@
     width: 100%;
     z-index: 1;
     bottom: 0;transition: all .5s ease-in-out;
-    background-color: #2e3652;
-    padding: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .bottomBar .tools{
-    display: flex;
-    margin-bottom: 5px;
-    justify-content: space-between;
-    color: #fff;
+    display: flex;margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
 }
-.bottomBar .tools span{cursor:pointer;}
+@keyframes doTransparent{
+    0%{
+        background-color: #fff;
+        box-shadow: 0 0 12px 1px #fff;
+    }
+    50%{
+        background-color: #c9c9c912;
+        box-shadow: 0 0;
+    }
+    100%{
+        background-color: #fff;
+        box-shadow: 0 0 12px 1px #fff;
+    }
+}
+.bottomBar .tools span.BotTogUp{
+    cursor: pointer;
+    background-color: #fff;
+    width: 50%;
+    height: 5px;    box-shadow: 0 0 12px 1px #fff;
+    border-radius: 45px;
+    animation: doTransparent 2.5s infinite;
+}
+
 .bottomBar ul{
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: scroll;
+    background-color: #2e3652;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     max-height: 0;
+    transition: max-height .5s ease-in-out;
+}
+.bottomBar ul::-webkit-scrollbar{
+    background-color: transparent;height: 0;
 }
 .bottomBar .tools .fas{
     font-size: x-large;
 }
 .bottomBar ul.Show{
-    max-height: 180px;
-    transition: all .5s ease-in-out;
+    max-height: 80px;
 }
+.bottomBar ul li{min-width: calc(100vw/4.8);}
 .bottomBar ul li a{
-    display: none;/*flex*/
+    display: flex;
     justify-content: center;
     margin: 10px;
-    border: 1px solid #485273;
-    height: 70px;
-    width: 70px;
     text-align: center;
-    border-radius:5px;
     text-decoration: none;
     color: #fff;
     font-size: 11px;
@@ -228,7 +252,14 @@
 }
 .bottomBar ul li a .fas{margin:10px; font-size:medium}
 
-.bottomBar ul li a:hover{background-color: #10111b;transition: all .5s ease-in-out;}
+.bottomBar ul li.active{
+    background-color: #10111b;
+    border-top: 5px solid #fd5c55;
+}
+.bottomBar ul li:hover{
+    background-color: #10111b;
+    transition: all .5s ease-in-out;
+}
 #BackToTop{
     position: absolute;
     display: flex;
