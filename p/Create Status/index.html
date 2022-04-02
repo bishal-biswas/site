@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Status</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="top">
+                <img src="../../../Github/MyPortfolio/Assets/images/Photo.jpg" alt="">
+                <span>
+                    <p contenteditable="true">Bishal Biswas</p>
+                    <p contenteditable="true">@</p>
+                </span>
+                <span class="icon" contenteditable="true" style="display: none;">
+                    <i class="fab fa-linkedin-in" style="color: #01018b;"></i>
+                    <i class="fab fa-twitter" style="color: skyblue;"></i>
+                    <i class="fas fa-globe" style="color: #fff;"></i>
+                </span>
+            </div>
+            <div class="content">
+                <p contenteditable="true">Enter your Content here </p>
+                <p class="dt">02 Apr, 2022</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const d = new Date();
+        var m_names = ['Jan', 'Feb', 'Mar', 
+               'Apr', 'May', 'Jun', 'Jul', 
+               'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        document.querySelector('.dt').innerHTML= d.getDate() + " " + m_names[d.getMonth()] + ", " + d.getUTCFullYear();
+    </script>
+
+</body>
+</html>

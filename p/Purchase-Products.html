@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Hi! I am Bishal Biswas.">
+    <title>Bishal Biswas All Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../Assets/6.1.1swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css"> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .wrapper {
+            background-image: linear-gradient(180deg, #404040, #ff5c5c);
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-height: 100vh;
+        }
+
+        .container {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #89898947;
+            border-radius: 10px;
+            box-shadow: 0px 0px 9px 1px black;
+            padding: 2%;
+            padding-top: 6%;
+        }
+
+        .container b {
+            font-size: larger;
+        }
+
+        .container b,
+        .container p {
+            margin: 5px 0;
+            color: #fff;
+        }
+
+        .ProPic {
+            height: 125px;
+            width: 125px;
+            border-radius: 50%;
+            border: 4px solid #f45a5a;
+            box-shadow: 0 0 12px 1px #f85b5b;
+            ;
+            position: relative;
+            top: 60px;
+        }
+
+        .fa-check {
+            background-color: #2f82ff;
+            padding: 3px;
+            color: #fff;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+
+        .socials {
+            margin: 10px 0
+        }
+
+        .socials ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .socials ul li {
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 0px 5px 5px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 12px -1px #000;
+        }
+
+        .main-links,
+        .links {
+            margin: 35px 0 0 0;
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .links{
+            flex-direction: column;
+            align-items: center;
+        }
+        .links .fas {padding: 0 5px;}
+        .links a {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 70%;
+            display: flex;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 50px;
+            margin: 9px;
+            height: 50px;
+            box-shadow: 0px 0px 9px 1px black;
+        }
+        .links a img{
+            height: 90%;
+            border-radius: 50%;
+            border: 1px solid;    margin: 0 5px;
+        }
+        .btnsLinks {
+            padding: 20px;
+            display: flex;
+        }
+
+        .btnsLinks a {
+            background-image: linear-gradient(45deg, #6485ff, #3a3cff);
+            color: #fff;
+            border-radius: 20px;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            min-width: 110px;
+            display: block;
+            box-shadow: 0 0 5px 2px #3a3cff;
+        }
+
+        .main-links a {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;text-decoration: none;
+            color: #fff;
+        }
+
+        .main-links a img {
+            width: 50%;
+            border-radius: 7px;
+            transition: 0.5s all ease-in-out;
+            box-shadow: 0 0 12px -1px #000;
+        }
+
+        .main-links a:hover img{
+            box-shadow: 0 0 12px 3px #000;
+        }
+
+        .rec-Artcl {
+            height: 220px;
+            width: 60%;
+            padding: 15px 0;
+        }
+
+        b {
+            padding: 10px;
+            display: block;
+            color: #fff;
+            width:100%
+        }
+
+        .credits {
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /*Media Queries for responsive*/
+        @media (max-width: 840px) {
+            .container {
+                width: 90%;
+            }
+
+            .links a {
+                width: 90%;
+            }
+
+            .main-links, .rec-Artcl {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                width: 90%;
+                padding-top: 15%;
+            }
+
+            .main-links, .links,
+            .rec-Artcl {
+                width: 90%;
+            }
+        }
+
+        /*----------------------------------------------------------------------*/
+        .swiper-container {
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            border-radius: 10px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            display: flex;
+            height: 180px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="../Assets/images/Photo.jpg" alt="ProfilePicMain" class='ProPic'>
+        <div class="container">
+            <b>Bishal Biswas<i class="fa fa-check" aria-hidden="true"></i></b>
+            <p>Blogger | Web Developer Enthusiast</p>
+            <p>Hi , I am Bishal, a Masters student with a dream of becoming a professional web developer. I like to explorer and write content/articles on computer/tech related stuffs on my blog.</p>
+            <p><i class="fas fa-map-marker-alt fa-lg"></i> Kolkata, India</p>
+            <div class="socials">
+                <ul>
+                    <li><a target="_blank" href="https://facebook.com/bishal.biswas.9674"><i style="color: #6060ce;" class="fab fa-facebook  fa-2x"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/iamBishalBiswas"><i style="color: #40b2df;" class="fab fa-twitter  fa-2x"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/iambishal-biswas"><i style="color: #4747c7;" class="fab fa-linkedin  fa-2x"></i></a></li>
+                    <li><a target="_blank" href="https://quora.com/profile/Bishal-Biswas-55"><i style="color: #ce0909;" class="fab fa-quora  fa-2x"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/bishal-biswas"><i style="color: black;" class="fab fa-github  fa-2x"></i></a></li>
+                    <li><a target="_blank" href="mailto:bishalanshu@yahoo.in"><i style="color: blue;" class="fab fa-yahoo  fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="btnsLinks" style="display: none;">
+                <a href="">Played Games</a>
+                <a href="">My Favourite Songs</a>
+                <a href="">Movies Watched</a>
+            </div>
+        </div>
+
+        <div class="main-links">
+            <a target="_blank" href="https://itsme-bishal.blogspot.com" title="Coding Bishal Blog">
+                <img src="../Assets/images/folioImgs/Blog1.jpg" alt="Coding Bishal Blog Logo">
+                Coding Bishal
+            </a>
+            <a target="_blank" href="https://bishal-biswas.github.io/site/" title="My Portfolio">
+                <img src="../Assets/images/folioImgs/portfolio.jpg" alt="Bishal Biswas Portfolio">
+                Portfolio
+            </a>
+            <a target="_blank" href="https://storentrep.blogspot.com/" title="StorEntrep">
+                <img src="../Assets/images/folioImgs/Blog2.png" alt="StorEntrep Logo">
+                StorEntrep
+            </a>
+        </div>
+
+        <div class="rec-Artcl">
+            <b>Recent Article Published</b>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <a target="_blank" href="https://itsme-bishal.blogspot.com/2021/11/top-5-best-laptops-under-50000-2021-india.html" class="swiper-slide"><img src="https://1.bp.blogspot.com/--L-lVNDXj2g/YZAdaFsiUqI/AAAAAAAAAr4/5h1YtWNXp307eeVqzG5aj7YK1C1sON1mwCLcBGAsYHQ/w345-h194-p-k-no-nu/top-5-laptops-under-50000-in-India-Coding-Bishal.webp"></a>
+                    <a target="_blank" href="https://itsme-bishal.blogspot.com/2021/11/Metaverse-explained-all-you-need-know-about-Metaverse.html" class="swiper-slide"><img src="https://1.bp.blogspot.com/-BPPiOGED8uU/YYzGNmjLnHI/AAAAAAAAArw/O--KI7xHfyMJnMZmZIqMlYFvFc5JVgT1ACLcBGAsYHQ/w345-h194-p-k-no-nu/Metaverse-explained-meta-future-of-internet-coding-bishal.webp"></a>
+                    <a target="_blank" href="https://itsme-bishal.blogspot.com/2021/10/how-to-prepare-in-last-100-days-for.html" class="swiper-slide"><img src="https://1.bp.blogspot.com/-wBDiSz0MJTo/YXkjzVuL9sI/AAAAAAAAAq4/nMwTWIgwviMz2gSM7TKa1fTQp0ZhM9V7QCLcBGAsYHQ/w345-h194-p-k-no-nu/GATE-Exam-2022-Last-100-days-strategy-preparation-Coding-Bishal.webp"></a>
+                    <a target="_blank" href="https://itsme-bishal.blogspot.com/2021/06/create-fake-virus.html" class="swiper-slide"><img src="https://1.bp.blogspot.com/-iXLV06zTsuE/YXRIq5dSe0I/AAAAAAAAAqw/ezIIVNhtQBcV24qF5RZKY1no8hIrqxqKgCLcBGAsYHQ/w345-h194-p-k-no-nu/Fake-virus-coding-bishal.webp"></a>
+                    <a target="_blank" href="https://itsme-bishal.blogspot.com/2021/10/difference-between-programming-language.html" class="swiper-slide"><img src="https://1.bp.blogspot.com/-VFNXEBRE4GY/YWhPi-WTprI/AAAAAAAAApk/M4g5rAct94EOYfIVvhSLWTE95v2mwbnPACLcBGAsYHQ/w345-h194-p-k-no-nu/Difference-between-programming-languages-c-c%252B%252B-c%2523.webp"></a>
+                    <a target="_blank" href="https://itsme-bishal.blogspot.com/2021/10/what-is-vpn-vpn-simplified.html" class="swiper-slide"><img src="https://1.bp.blogspot.com/-D2QLJxXprU4/YWhM6QjUEMI/AAAAAAAAApc/BdMhf_Lx1RgO2E3PWAhea6ZapT3KQBQFQCLcBGAsYHQ/w345-h194-p-k-no-nu/what-is-vpn-vpn-simplified-its-me-bishal-coding-Bishal.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+            <b>Check out these links</b>
+            <a href="https://storentrep.blogspot.com" title="StorEntrep">
+                <img src="../Assets/images/folioImgs/Blog2.png" alt=""> Show your talent on StorEntrep
+            </a>
+            <a href="" title="Purchase Now" style="display: none;">
+                <i class="fas fa-shopping-cart fa-lg"></i> Buy from my Affiliate
+            </a>
+        </div>
+
+        <div class="credits">
+            <p>Made by Bishal Biswas <br> on Github.</p>
+        </div>
+    </div>
+
+     <script src="../Assets/6.1.1swiper-bundle.min.js"></script>
+    <script>
+        var width = window.innerWidth;
+        var Slide = 2.5;
+        if (width < 540)
+            Slide = 1.2;
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: Slide,
+            spaceBetween: 30,
+            freeMode: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>
