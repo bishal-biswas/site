@@ -1,0 +1,148 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    background-image: linear-gradient(180deg, #404040, #ff5c5c);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .title{
+    text-align: left;
+    color: #fff;
+    width: 60%;
+}
+
+.container .top, .container .main-content, .container .book-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #89898947;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 1px black;
+    padding: 2%;
+    margin: 15px;
+    color: #fff;
+}
+.container .top .author{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.container .top .author img{
+    width: 30px;height: 30px;
+    border-radius: 50%;
+    margin:0 7px;
+    border: 2px solid #fd5c55;
+    box-shadow: 0 0 4px 2px #fd5c55;
+}
+
+.container .main-content{
+    max-height: 50vh;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.container .main-content::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #00000073; /* or add it to the track */
+  }
+  
+  /* Add a thumb */
+  .container .main-content::-webkit-scrollbar-thumb {
+      background: #fd5c55;
+      border-radius: 5px;
+  }
+
+.container .main-content .book{
+    width: 32%;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+.container .main-content .book:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 4px 8px grey;
+    background-color: #ff5c5c77;
+    z-index: 99;
+    transition: 0.1s all ease-in-out;
+    position: relative;
+}
+
+.container .main-content .book .thumb{
+    width:100px;
+}
+
+canvas{
+    box-shadow: 6px 0px 9px 0px #000;
+    height: 90%;
+}
+.container .book-content .pagin{
+    margin: 10px 0;
+}
+.container .book-content .pagin .pag{
+    background-color: #00000087;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container .book-content .nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .book-content .nav i{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .book-content .nav i:hover{
+    background-color: #00000087;
+}
+
+.credits {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 840px) {
+    .container .top, .container .main-content,.container .title{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .container .top, .container .main-content,.container .title{
+        width: 80%;
+    }
+    .container .main-content{
+        max-height: 60vh;
+    }
+    .container .main-content .book p{
+        font-size: x-small;
+    }
+
+    .container .top, .container .main-content, .container .book-content{
+        width: 90%;
+    }
+
+    .container .top, .container .main-content, .container .book-content canvas{
+        width: 95%;
+    }
+}

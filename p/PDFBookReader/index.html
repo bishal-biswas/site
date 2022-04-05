@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Books Reader - By Bishal Biswas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h2>Online PDF Book Reader</h2>
+            <span class="author">
+                <p>by- </p><img src="https://bishal-biswas.github.io/site/Assets/images/Photo.jpg" alt="">
+                <b>Bishal Biswas</b>
+            </span>
+        </div>
+        <b class="title">Available Books to Read</b>
+        <div class="main-content" id="BooksShows"></div>
+        <div class="credits">
+            <p>Made by Bishal Biswas <br> hosted on Github.</p>
+            <p>About PDF Book Reader</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        showBooks();
+        document.querySelectorAll('.book').forEach(Book => Book.addEventListener("click", function () {
+            window.location.href="Read.html?Bk="+Book.getAttribute("pdf-data");
+        }));
+    </script>
+</body>
+</html>
