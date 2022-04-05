@@ -37,6 +37,7 @@
     <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script src="main.js"></script>
     <script>
+        document.title = "Reading - " + BookDetails[SelectedBook][0];
         // If absolute URL from the remote server is provided, configure the CORS
         // header on that server.
         var url = 'https://bishal-biswas.github.io/site/p/PDFBookReader/Pdfs/'+ BookDetails[SelectedBook][0] +'.pdf';
