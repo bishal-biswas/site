@@ -12,7 +12,7 @@
     <div class="wrapper">
         <div class="container">
             <div class="top">
-                <img src="../../Assets/images/Photo.jpg" alt="">
+                <img id="fullsc" src="../../Assets/images/Photo.jpg" alt="">
                 <span>
                     <p contenteditable="true">Bishal Biswas</p>
                     <p contenteditable="true">@</p>
@@ -36,6 +36,24 @@
                'Apr', 'May', 'Jun', 'Jul', 
                'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         document.querySelector('.dt').innerHTML= d.getDate() + " " + m_names[d.getMonth()] + ", " + d.getUTCFullYear();
+    </script>
+    <script>
+        //Fullscreen and normal screen
+        var flag = 0;
+        try {
+            document.querySelector("#fullsc").addEventListener('click', function(){
+                if(flag == 0){
+                    document.querySelector(".wrapper").requestFullscreen();
+                    flag = 1;
+                }
+                else if(flag == 1){
+                    flag = 0;
+                    document.exitFullscreen();
+                }
+            });
+        } catch (error) {
+
+        }
     </script>
 
 </body>
